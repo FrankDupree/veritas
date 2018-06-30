@@ -1,11 +1,29 @@
 ﻿body {
     padding: 0;
     margin:0;
-    background-image: url(/Image/login-background.png);
-    background-size: cover;
+    background-color: #f2f2f2;
+}
+.vl {
+   border-left: 2px solid #ddd;
+   height: 500px;
+   margin-top: 40px;
+   position: absolute;
+   left: 100%;
+  
+   margin-left: -3px;
+   top: 0;
+}
+hr{
+    height: 1px;
+    background: #ddd;
 }
 #logo {
     width: 200px;
+}
+.login-page {
+
+    background-image: url(/Image/login-background.png);
+    background-size: cover;
 }
 #login-form {
     margin-top: 5%;
@@ -20,7 +38,6 @@ input.login-form-input.form-control {
     border-bottom: 2px solid #ddd;
     border-radius: 0px;
     background-color: #fdfdfd;
-    border-top: 1px solid #fdfdfd;
     max-width: 350px;
 }
 button#auth {
@@ -76,4 +93,177 @@ button#rsa-btn {
 }
 .rsa-section {
     height: 80px;
+}
+/*user profile page styles below*/
+.title_ {
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    margin-top: 40px;
+}
+.title-head-button {
+    float: right;
+    margin-top: 10px
+}
+.title-head-button1 {
+    padding: 7px 20px 7px 20px;
+    border: 1px solid #303466;
+    border-radius: 5px;
+    background: #f2f2f2;
+    margin-top: 20px;
+    width: auto;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.title-head-button2 {
+    padding: 7px 20px 7px 20px;
+    border: 1px solid #303466;
+    border-radius: 5px;
+    background: #303466;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+.h1, .h3 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #666;
+}
+.h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #303466;
+    font-weight: bold;
+}
+.img-with-border {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    border: 5px solid #fff;
+    height: 100px;
+}
+button.upload {
+    padding: 10px;
+    border: 0px;
+    background-color: #66d43d;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 50px;
+}
+button.delete {
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+    margin-top: 20px;
+    width: 150px;
+    margin-bottom:50px;
+}
+input.form-input.form-control {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+}
+label {
+    color: #666;
+}
+.col_.col-md-9.info-col {
+    overflow: auto;
+    height: 600px;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #303466; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+#mySidenav ul {
+    padding-left:0;
+}
+#mySidenav div.sidebar-logo{
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #000;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.navbar {
+    margin-bottom:0;
+    border-radius: 0px;
+}
+div.icon-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+.navbar-header.my-header {
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.search-form {
+        margin-top: 7px;
+    min-width: 200px;
+}
+.search-form input {
+    border-bottom:2px solid rgba(0,0,0,0.6);
+    border-left: 0px;
+    border-right:0;
+    border-top:0;
+    border-radius: 0;
+    background: #f8f8f8;   
+}
+.nav-img{
+    float: right;
+    height: 35px;
+    margin:5px 30px;
+    border: 2px solid #fff;
 }

@@ -200,6 +200,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Image\avatar.jpg" />
     <Content Include="Image\login-background.png" />
     <Content Include="Image\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -254,6 +255,8 @@
     <Content Include="Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\footer.cshtml" />
     <Content Include="Views\Shared\header.cshtml" />
+    <Content Include="Views\Home\UserProfile.cshtml" />
+    <Content Include="Views\Shared\sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

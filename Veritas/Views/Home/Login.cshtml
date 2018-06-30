@@ -1,25 +1,27 @@
-﻿
-<div class="col-md-offset-4" id="login-form">
-    <div align="center">
-        <img src="~/Image/logo.png" class="img img-responsive" id="logo"/>
-        <form class="form-signin" id="reg-form" action="/home/auth">
-            <input type="text" class="login-form-input form-control" name="email" placeholder="Email address" autofocus>
-            <input type="password" class="login-form-input form-control" name="password" placeholder="Password">
-            <button class="login-form-button" type="submit" id="auth">Sign in</button>
-            <br/>
-            <div id="forgot-password">
-                <span>Forgot your password?</span>
-                <a href="#">click here</a>
-            </div>
-            <hr />
-            <div class="rsa-section container">
-                <div class="col-md-6">
-                    <span>Don't have an RSA Account</span>
+﻿<div class="login-page">
+    <div class="col-md-offset-4" id="login-form">
+        <div align="center">
+            <img src="~/Image/logo.png" class="img img-responsive" id="logo" />
+            <form class="form-signin" id="reg-form" action="/home/auth">
+                <input type="text" class="login-form-input form-control" name="email" placeholder="Email address" autofocus>
+                <input type="password" class="login-form-input form-control" name="password" placeholder="Password">
+                <button class="login-form-button" type="submit" id="auth">Sign in</button>
+                <br />
+                <div id="forgot-password">
+                    <span>Forgot your password?</span>
+                    <a href="#">click here</a>
                 </div>
-                <div class="col-md-6">
-                    <button id="rsa-btn">Open RSA Now</button>
+                <hr />
+                <div class="rsa-section container">
+                    <div class="col-md-6">
+                        <span>Don't have an RSA Account</span>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="rsa-btn">Open RSA Now</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
+
 </div>

@@ -22,6 +22,19 @@ namespace Veritas.Controllers
             return RedirectToAction("Login", "Home");
         }
 
+        //created by me chinedum
+        [HttpGet]
+        public ActionResult UserProfile()
+        {
+            string username = (string)System.Web.HttpContext.Current.Session["username"];
+            if (username == null)
+            {
+                return View();
+            }
+
+            return RedirectToAction("Login", "Home");
+        }
+
         public ActionResult Login()
         {
             

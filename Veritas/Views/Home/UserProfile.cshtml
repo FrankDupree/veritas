@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "UserProfile";
+}
+
+@{
+    Html.RenderPartial("sidebar");
+}
+<div class="profile-page" id="main">
+    @{
+        Html.RenderPartial("header");
+    }
+    <div class="col_ col-md-3">
+        <div align="center">
+            <div class="h1">Profile</div>
+            <img class="img-circle img-responsive img-rounded img-with-border" src="~/Image/avatar.jpg" />
+            <div class="h2">Unor Chinedum</div>
+            <div class="h3">Customer</div>
+            <div class="container-fluid">
+                <button class="upload">Upload New Image</button>
+            </div>
+            <div class="container-fluid">
+                <button class="delete">Delete</button>
+            </div>
+        </div>
+        <div class="vl"></div>
+    </div>  
+    <div class="col_ col-md-9 info-col">
+        <div class="container">
+            <div class="title_">
+                <span>Basic Info</span>
+            </div>
+            <div class="title-head-button">
+                <button class="title-head-button1">Cancel</button>
+                <button class="title-head-button2">Save</button>
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <label>Title</label>
+            <input type="text" class="form-input form-control" name="title" placeholder="First Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>First Name</label>
+            <input type="text" class="form-input form-control" name="firstname" placeholder="First Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Last Name</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Phone Number</label>
+            <input type="text" class="form-input form-control" name="firstname" placeholder="First Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Email Address</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="container">
+            <div class="title_">
+                <span>Contact Info</span>
+            </div>
+        </div>
+        <hr />
+        <div class="col-md-6">
+            <label>Company</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Street</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>City</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>State</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Zip Code</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Country</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="container">
+            <div class="title_">
+                <span>Account Info</span>
+            </div>
+            <div class="title-head-button">
+                <button class="title-head-button1">Cancel</button>
+                <button class="title-head-button2">Save</button>
+            </div>
+        </div>
+        <hr />
+        <div class="col-md-6">
+            <label>New Password</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div class="col-md-6">
+            <label>Confirm Password</label>
+            <input type="text" class="form-input form-control" name="lastemail" placeholder="Last Name" autofocus>
+        </div>
+        <div id="forgot-password">
+            <span>Forgot your password?</span>
+            <a href="#">click here</a>
+        </div>
+    </div>
+    @{
+        Html.RenderPartial("footer");
+    }
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
